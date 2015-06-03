@@ -31,17 +31,17 @@ To resolve that, SWDA uses an incremental rating which starts from a small numbe
 
 Assume the user A rolls a **N**-sides dice, a "success" means the number is no bigger than **M** (**M** < **N**), for a single roll, the success rate is:
 
- ** M/N **
+ **M/N**
  
-The game starts from M = 1, and for each rolling, if it is ** NOT SUCCESS **, M has a self-increment of 1, otherwise, 1 is assigned to M.
+The game starts from M = 1, and for each rolling, if it is **NOT SUCCESS**, M has a self-increment of 1, otherwise, 1 is assigned to M.
 
 It is clear that, at most after N times, the success rate will be N/N which is 1 or 100%, that resolve the first problem : players will win the game in a predictable time.
 
-Then assume that there are a huge number of players roll the N-sides dice together. A new concept is involved here : Turn. For each turn, each player can choose to roll once or not, as soon as all the players make the decision and roll, a turn ends. So, when the **I**th ( **I** >> 1 ) turn ends, what is the ** average success rate ** of all the players who select to roll?
+Then assume that there are a huge number of players roll the N-sides dice together. A new concept is involved here : Turn. For each turn, each player can choose to roll once or not, as soon as all the players make the decision and roll, a turn ends. So, when the **I**th ( **I** >> 1 ) turn ends, what is the **average success rate** of all the players who select to roll?
 
-If we call the number of players who choose to roll is ** K **, and ** T ** of them success, then the **average success rate** is 
+If we call the number of players who choose to roll is **K**, and **T** of them success, then the **average success rate** is 
 
- ** T/K **
+ **T/K**
 
  which is the game designers required.
 
